@@ -81,7 +81,6 @@ const galleryMarkup = images
 
 gallery.insertAdjacentHTML('afterbegin', galleryMarkup);
 
-
 let galleryLibrary = new SimpleLightbox('.gallery a', {
   captions: true,
   captionsData: 'alt',
@@ -89,7 +88,6 @@ let galleryLibrary = new SimpleLightbox('.gallery a', {
 	overlayOpacity: 0.8,
 	captionsPosition: 'bottom'
 });
-
 
 // galleryLibrary.on('show.simplelightbox', imageClick = (event) => {
 // 	event.preventDefault();
