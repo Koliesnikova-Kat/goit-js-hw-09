@@ -1,5 +1,5 @@
-// import SimpleLightbox from simplelightbox;
-// import "simplelightbox/dist/simple-lightbox.min.css";
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const images = [
   {
@@ -88,27 +88,3 @@ let galleryLibrary = new SimpleLightbox('.gallery a', {
 	overlayOpacity: 0.8,
 	captionsPosition: 'bottom'
 });
-
-// galleryLibrary.on('show.simplelightbox', imageClick = (event) => {
-// 	event.preventDefault();
-//   if (event.target === event.currentTarget) {
-//     return;
-//   }
-//   const instance = basicLightbox.create(`
-//     <img src='${event.target.dataset.source}'>
-//   `)
-//   instance.show();
-// });
-
-// function imageClick(event) {
-//   event.preventDefault();
-//   if (event.target === event.currentTarget) {
-//     return;
-//   }
-//   const instance = basicLightbox.create(`
-//     <img src='${event.target.dataset.source}'>
-//   `)
-//   instance.show();
-// };
-
-// gallery.addEventListener('click', imageClick);
