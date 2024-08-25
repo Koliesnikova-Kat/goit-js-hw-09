@@ -40,7 +40,7 @@ form.addEventListener('input', onFormInput);
 const onFormSubmit = event => {
   event.preventDefault();
   
-  if (email.value === '' && message.value === '') {
+  if (email.value === '' || message.value === '') {
     alert('Fill please all fields');
   } else {
     console.log(formData);
